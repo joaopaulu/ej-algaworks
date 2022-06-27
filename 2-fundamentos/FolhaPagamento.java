@@ -24,5 +24,6 @@ public class FolhaPagamento {
         horasTrabalhadas, valorHora, valorTotalTrabalhado);
     System.out.printf("Descontos: R$%.2f%n", valorDescontos);
     System.out.printf("Total devido: R$%.2f%n", valorTotalDevido);
+    entrada.close();
   }
 }

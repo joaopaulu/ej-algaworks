@@ -27,5 +27,6 @@ public class CalculadoraIMC {
     }
 
     System.out.println("Fim do programa");
+    entrada.close();
   }
 }

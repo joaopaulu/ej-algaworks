@@ -12,12 +12,13 @@ public class CaixaLoja {
 
     double valorFrete = 0;
 
-    if(cobrarFrete){
+    if (cobrarFrete) {
       System.out.print("Valor do frete: ");
       valorFrete = entrada.nextDouble();
     }
 
     double valorTotal = precoProdutos + valorFrete;
     System.out.printf("Valor total: R$%.2f%n", valorTotal);
+    entrada.close();
   }
 }

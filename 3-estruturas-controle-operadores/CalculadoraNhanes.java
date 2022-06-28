@@ -32,5 +32,6 @@ public class CalculadoraNhanes {
     }
 
     System.out.println("Fim do programa");
+    entrada.close();
   }
 }

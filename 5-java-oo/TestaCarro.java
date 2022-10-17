@@ -14,8 +14,11 @@ public class TestaCarro {
         seuCarro.modelo = "Logan";
         seuCarro.precoCompra = 50000;
 
-       double valorRevenda = meuCarro.calcularValorRevenda();
-       System.out.println(valorRevenda);
+        double ipva = meuCarro.calcularIpva();
+        System.out.println(ipva);
+
+        meuCarro.imprimirResumoDepreciacao();
+        seuCarro.imprimirResumoDepreciacao();
         
        // seuCarro.calcularValorRevenda();
     }

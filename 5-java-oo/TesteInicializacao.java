@@ -5,9 +5,6 @@ public class TesteInicializacao {
         meuCarro.fabricante = "Honda";
         meuCarro.anoFabricacao = 2022;
         meuCarro.proprietario.nome = "Maria";
-
-        Pessoa proprietarioAntigo = meuCarro.proprietario;
-
         meuCarro.proprietario = new Pessoa();
 
         System.out.println(meuCarro.fabricante);

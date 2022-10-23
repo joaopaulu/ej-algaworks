@@ -1,5 +1,9 @@
 # Especialista Java
 
+<p  align="center">
+	 <img alt="Proffy" src=".github/especialista-java.png"/>  
+</p>
+
 ## Conteúdo programático 📖
 
 ### 1. Plataforma Java e ambiente de desenvolvimento
@@ -83,3 +87,48 @@
 4.12. Testando código com JShell Console da IDE
 4.13. Consistência no estilo de codificação com EditorConfig
 4.14. Importando um projeto existente na IDE
+
+### 5. Mergulhando em orientação a objetos
+
+5.1. O paradigma da Programação Orientada a Objetos (POO)
+5.2. Entendendo o conceito de classes e objetos
+5.3. Criando uma classe com atributos
+5.4. Instanciando objetos
+5.5. Acessando atributos de objetos
+5.6. Conhecendo o diagrama de classes da UML
+5.7. Desafio: instanciando objetos e acessando os atributos
+5.8. Composição de objetos
+5.9. Atribuindo o objeto na composição
+5.10. Diagrama de classes: associação, agregação e composição
+5.11. Valores padrão e inicialização de variáveis de instância
+5.12. Inicialização de objetos em variáveis de instância
+5.13. Caindo a ficha: variáveis referenciam objetos
+5.14. Criando e invocando um método
+5.15. Implementando a lógica do método
+5.16. IntelliJ IDEA: debug de chamadas de métodos
+5.17. Métodos com retorno
+5.18. Implementando métodos menores e evitando duplicação de código
+5.19. Saindo do método com a cláusula return
+5.20. Métodos que retornam objetos
+5.21. Refatorando para tornar uma classe mais rica
+5.22. Discutindo nome e responsabilidade da classe
+5.23. Métodos com argumentos
+5.24. Passando objetos como argumentos de métodos
+5.25. Desafio: composição de objetos e métodos
+5.26. Diagrama de classes: métodos e dependências
+5.27. Métodos que alteram variável de instância
+5.28. Métodos que alteram o valor de parâmetro do tipo primitivo
+5.29. Métodos que alteram o estado de objeto recebido como parâmetro
+5.30. Usando a palavra-chave this
+5.31. Atributos de classe com o modificador static
+5.32. Método de instância alterando variável estática
+5.33. Métodos de classe (estáticos)
+5.34. Método estático acessando membro de instância
+5.35. Desafio: membros estáticos
+5.36. Declarando constantes com static e final
+5.37. Modificador final em variáveis locais
+5.38. Sobrecarga de métodos
+5.39. Inferência de tipo de variável local
+5.40. Desafio: modificador final em variáveis locais
+5.41. Desafio: sobrecarga de métodos
+5.42. Desafio: inferência de tipo de variável local

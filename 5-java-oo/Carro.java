@@ -36,7 +36,7 @@ public class Carro {
 
   double calcularValorRevenda() {
     int tempoDeUsoEmAnos = calcularTempoDeUsoEmAnos();
-    int vidaUtilEmAnos = 20;
+    final int vidaUtilEmAnos = 20;
 
     double valorRevenda = (precoCompra / vidaUtilEmAnos) * (vidaUtilEmAnos - tempoDeUsoEmAnos);
 

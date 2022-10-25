@@ -132,3 +132,13 @@
 5.40. Desafio: modificador final em variáveis locais
 5.41. Desafio: sobrecarga de métodos
 5.42. Desafio: inferência de tipo de variável local
+
+### 6. Começando com boas práticas e código limpo
+
+6.1. Boas práticas com Effective Java e Clean Code
+6.2. Código Limpo: escolha bons nomes
+6.3. Código Limpo: tamanho e organização de classes
+6.4. Código Limpo: comentários no código
+6.5. Código Limpo: métodos pequenos e que fazem só uma coisa
+6.6. Código Limpo: pensando melhor nos argumentos de métodos
+6.7. Boas práticas: valide os argumentos

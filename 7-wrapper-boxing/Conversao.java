@@ -3,11 +3,11 @@ public class Conversao {
     int idade = 20;
     short idadeShort = (short) idade;
 
-    Integer diasEntrega = Integer.valueOf(30);
-    short diasEntregaShort = Short.valueOf(diasEntrega.shortValue());
-    Long diasEntregaLong = Long.valueOf(diasEntrega.longValue());
+    Integer diasEntrega = 30;
+    short diasEntregaShort = diasEntrega.shortValue();
+    Long diasEntregaLong = diasEntrega.longValue();
 
-    Double valorTotal = Double.valueOf(1550.2);
+    Double valorTotal = 1550.2;
     int valorTotalInt = valorTotal.intValue();
     System.out.println(valorTotalInt);
   }

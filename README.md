@@ -142,3 +142,12 @@
 6.5. Código Limpo: métodos pequenos e que fazem só uma coisa
 6.6. Código Limpo: pensando melhor nos argumentos de métodos
 6.7. Boas práticas: valide os argumentos
+
+### 7. Wrappers e boxing
+
+7.1. Usando classes wrapper
+7.2. Métodos de conversão
+7.3. Autoboxing e unboxing
+7.4. Comparando wrappers
+7.5. Desafio: wrappers e boxing
+7.6. Boas práticas: prefira tipos primitivos a wrappers

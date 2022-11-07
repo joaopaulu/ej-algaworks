@@ -14,6 +14,7 @@ public class Principal {
 
     cardapio.adicionarItem(item1);
     cardapio.adicionarItem(item2);
+    //cardapio.removerItem(1);
 
     cardapio.imprimirItensCardapio(2, 10000);
   }

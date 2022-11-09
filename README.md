@@ -151,3 +151,26 @@
 7.4. Comparando wrappers
 7.5. Desafio: wrappers e boxing
 7.6. Boas práticas: prefira tipos primitivos a wrappers
+
+### 8. Trabalhando com Arrays
+
+8.1. Declarando e inicializando arrays
+8.2. Acessando e atribuindo elementos de arrays
+8.3. Iterando em arrays
+8.4. Transformando arrays em representações em string
+8.5. Ordenando arrays em ordem natural e reversa
+8.6. Criando arrays de objetos
+8.7. Iterando em arrays de objetos
+8.8. Copiando e expandindo arrays
+8.9. Removendo elementos de arrays
+8.10. Desafio: arrays
+8.11. Um pouco da ArrayList da Collections API
+8.12. Desafio: ArrayList
+8.13. Diagrama de classes: multiplicidade para arrays
+8.14. Boas práticas: retorne arrays ou coleções vazias no lugar de null
+8.15. Criando arrays multidimensionais
+8.16. Iterando em arrays multidimensionais
+8.17. Lendo os parâmetros da linha de comando
+8.18. Criando métodos com argumentos variáveis com Varargs
+8.19. Boas práticas: use varargs com cuidado
+8.20. Desafio: varargs

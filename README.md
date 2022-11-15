@@ -174,3 +174,14 @@
 8.18. Criando métodos com argumentos variáveis com Varargs
 8.19. Boas práticas: use varargs com cuidado
 8.20. Desafio: varargs
+
+### 9. Gerenciamento de memória do Java
+
+9.1. Estrutura da memória da JVM
+9.2. Call Stack, Stack Memory e Heap Memory
+9.3. Informações da Memória Heap com a Runtime API
+9.4. Configurando a Memória Heap da JVM
+9.5. Garbage Collector
+9.6. Inalcançabilidade de objetos
+9.7. Quando esgota a Memória Heap: OutOfMemoryError
+9.8. Boas práticas: remova referências de objetos não usados

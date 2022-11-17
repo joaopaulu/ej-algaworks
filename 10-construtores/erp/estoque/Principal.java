@@ -1,4 +1,4 @@
-package chamandoConstrutor;
+package erp.estoque;
 
 public class Principal {
     public static void main(String[] args) {

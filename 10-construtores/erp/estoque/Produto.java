@@ -1,4 +1,4 @@
-package chamandoConstrutor;
+package erp.estoque;
 
 import java.util.Objects;
 

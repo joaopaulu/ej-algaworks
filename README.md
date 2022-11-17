@@ -185,3 +185,23 @@
 9.6. Inalcançabilidade de objetos
 9.7. Quando esgota a Memória Heap: OutOfMemoryError
 9.8. Boas práticas: remova referências de objetos não usados
+
+### 10. construtores, pacotes e visibilidade
+
+10.1. Criando e chamando construtores
+10.2. Construtores com parâmetros
+10.3. Sobrecarga de construtores
+10.4. Boas práticas: valide os argumentos de construtores também
+10.5. Encadeamento de chamadas de construtores
+10.6. Diagrama de classes: construtores
+10.7. Desafio: construtores
+10.8. Modificador final em variáveis de instância
+10.9. Organizando as classes em pacotes
+10.10. Importando classes de pacotes
+10.11. Modificador de acesso public e default
+10.12. Modificador de acesso private
+10.13. Diagrama de classes: visibilidade public, package e private
+10.14. Desafio: pacotes e modificadores de acesso
+10.15. Importando membros estáticos (static import)
+10.16. Múltiplas classes não-públicas em um único arquivo
+10.17. Conhecendo a documentação JavaDoc do Java SE

@@ -16,7 +16,7 @@ public class Principal {
         Recibo reciboPagamento = servicoDePagamento.efetuarPagamento(supermercado, cartao, 100);
         reciboPagamento.imprimir();
 
-        System.out.printf("Titular: %s%n", cartao.titular);
-        System.out.printf("Saldo: R$%.2f%n", cartao.saldo);
+        System.out.printf("Titular: %s%n", cartao.getTitular());
+        System.out.printf("Saldo: R$%.2f%n", cartao.getSaldo());
     }
 }

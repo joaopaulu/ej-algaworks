@@ -6,12 +6,12 @@ import cartaobeneficio.Recibo;
 
 public class ServicoDePagamentoOnline {
     public Recibo efetuarPagamento(Estabelecimento estabelecimento, Cartao cartao, double valor){
-        if(cartao.saldo < valor){
+        if(cartao.getSaldo() < valor){
             throw new RuntimeException("Saldo insuficiente para pagamento");
         }
 
-        cartao.saldo -= valor;
+        cartao.setSaldo(cartao.getSaldo() - valor);
 
-        return new Recibo(cartao.titular, "Pagamento", valor);
+        return new Recibo(cartao.getTitular(), "Pagamento", valor);
     }
 }

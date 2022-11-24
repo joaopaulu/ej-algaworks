@@ -186,7 +186,7 @@
 9.7. Quando esgota a Memória Heap: OutOfMemoryError
 9.8. Boas práticas: remova referências de objetos não usados
 
-### 10. construtores, pacotes e visibilidade
+### 10. Construtores, pacotes e visibilidade
 
 10.1. Criando e chamando construtores
 10.2. Construtores com parâmetros
@@ -205,3 +205,18 @@
 10.15. Importando membros estáticos (static import)
 10.16. Múltiplas classes não-públicas em um único arquivo
 10.17. Conhecendo a documentação JavaDoc do Java SE
+
+### 11. Encapsulamento, JavaBeans e Records
+
+11.1. O problema da falta de encapsulamento
+11.2. Implementando encapsulamento
+11.3. JavaBeans e métodos getters e setters
+11.4. IntelliJ IDEA: gerando getters e setters
+11.5. Desafio: encapsulamento e JavaBeans
+11.6. Boas práticas: use métodos de acesso em classes públicas (incluindo Tell Don't Ask)
+11.7. Código limpo: Lei de Demeter (incluindo Train Wreck)
+11.8. Boas práticas: não permita instanciação com construtor privado
+11.9. Boas práticas: crie cópias defensivas
+11.10. Boas práticas: minimize a mutabilidade (incluindo Value Object)
+11.11. Records
+11.12. Diagrama de classes: Records

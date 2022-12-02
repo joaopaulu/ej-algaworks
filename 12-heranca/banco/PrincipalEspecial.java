@@ -2,10 +2,8 @@ package banco;
 
 public class PrincipalEspecial {
     public static void main(String[] args) {
-        ContaEspecial conta1 = new ContaEspecial();
-        conta1.setTitular(new Titular("João Paulo", "00479309183"));
-        conta1.setAgencia(0001);
-        conta1.setNumero(25165);
+        Titular titular = new Titular("João Paulo", "00479309183");
+        ContaEspecial conta1 = new ContaEspecial(titular, 001, 251635, 90);
         conta1.depositar(1000);
         conta1.setTarifaMensal(90);
 

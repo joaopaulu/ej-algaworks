@@ -4,7 +4,11 @@ public class ContaInvestimento extends Conta {
 
 		private double valorTotalRendimentos;
 
-		public double getValorTotalRendimentos() {
+	public ContaInvestimento(Titular titular, int agencia, int numero) {
+		super(titular, agencia, numero);
+	}
+
+	public double getValorTotalRendimentos() {
 				return valorTotalRendimentos;
 		}
 

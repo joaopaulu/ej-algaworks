@@ -1,17 +1,21 @@
 package polibanco;
 
 public class Principal {
-		public static void main(String[] args) {
-				polibanco.Titular titular = new Titular("João Paulo", "00479309183");
-				polibanco.Conta conta1 = new Conta(titular, 001, 251635);
+    public static void main(String[] args) {
+        CaixaEletronico caixaEletronico = new CaixaEletronico();
 
-				conta1.depositar(100);
+        ContaEspecial conta1 = new ContaEspecial(new Titular("JP", "00479309183"),
+                6397, 25163, 50);
+        conta1.setLimiteChequeEspecial(1000);
 
-				conta1.imprimirDemonstrativo();
+        ContaInvestimento conta2 = new ContaInvestimento(new Titular("Chico", "05464312390"),
+                6397, 25163);
+        conta2.depositar(100);
+        conta2.creditarRendimentos(10);
 
-				conta1.sacar(15);
-				conta1.imprimirDemonstrativo();
+        caixaEletronico.imprimirDemonstrativo(conta2);
 
-				conta1.imprimirDemonstrativo();
-		}
+
+
+    }
 }

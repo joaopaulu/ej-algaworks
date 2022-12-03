@@ -1,7 +1,4 @@
-package banco;
-
-import polibanco.Conta;
-import polibanco.Titular;
+package polibanco;
 
 public class ContaInvestimento extends Conta {
 

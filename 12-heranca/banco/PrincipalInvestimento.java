@@ -1,9 +1,12 @@
 package banco;
 
+import polibanco.ContaInvestimento;
+import polibanco.Titular;
+
 public class PrincipalInvestimento {
     public static void main(String[] args) {
-        Titular titular = new Titular("João Paulo", "00479309183");
-        ContaInvestimento conta1 = new ContaInvestimento(titular, 001, 251635);
+        polibanco.Titular titular = new Titular("João Paulo", "00479309183");
+        polibanco.ContaInvestimento conta1 = new ContaInvestimento(titular, 001, 251635);
 
         conta1.depositar(100);
 

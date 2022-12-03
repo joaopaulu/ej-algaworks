@@ -1,6 +1,4 @@
-package banco;
-
-import polibanco.Titular;
+package polibanco;
 
 import java.util.Objects;
 
@@ -78,11 +76,11 @@ public class Conta {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Conta conta = (Conta) o;
-        return agencia == conta.agencia && Objects.equals(titular, conta.titular);
+        return agencia == conta.agencia && numero == conta.numero;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(titular, agencia);
+        return Objects.hash(agencia, numero);
     }
 }

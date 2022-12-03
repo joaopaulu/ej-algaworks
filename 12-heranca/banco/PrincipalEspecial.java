@@ -1,9 +1,12 @@
 package banco;
 
+import polibanco.ContaEspecial;
+import polibanco.Titular;
+
 public class PrincipalEspecial {
     public static void main(String[] args) {
-        Titular titular = new Titular("João Paulo", "00479309183");
-        ContaEspecial conta1 = new ContaEspecial(titular, 001, 251635, 90);
+        polibanco.Titular titular = new Titular("João Paulo", "00479309183");
+        polibanco.ContaEspecial conta1 = new ContaEspecial(titular, 001, 251635, 90);
         conta1.depositar(1000);
         conta1.setTarifaMensal(90);
 

@@ -220,3 +220,23 @@
 11.10. Boas práticas: minimize a mutabilidade (incluindo Value Object)
 11.11. Records
 11.12. Diagrama de classes: Records
+
+### 12. Herança
+
+12.1. Conhecendo o projeto deste módulo
+12.2. Criando classes etiquetadas (tagged classes)
+12.3. Duplicando classes e isolando os comportamentos
+12.4. Conhecendo herança e o relacionamento no diagrama de classes
+12.5. Implementando herança
+12.6. Sobrescrita de métodos
+12.7. Modificador de acesso protected
+12.8. Anotação @Override
+12.9. Chamando método da superclasse com super
+12.10. A classe Object
+12.11. Invocando construtores da superclasse
+12.12. Criando construtores com parâmetros na superclasse e subclasses
+12.13. Boas práticas: sempre sobrescreva o método Object.toString
+12.14. Modificador final em classes e métodos
+12.15. Desafio: implementando herança
+12.16. Sobrescrevendo o método Object.equals
+12.17. Boas práticas: obedeça o contrato ao sobrescrever o método equals

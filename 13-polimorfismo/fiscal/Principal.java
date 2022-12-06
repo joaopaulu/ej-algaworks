@@ -8,7 +8,5 @@ public class Principal {
 
 		gestorFiscal.emitirNotasFiscais(nfBola, nfMotor);
 
-		//System.out.println(nfBola.calcularImpostos());
-		//System.out.println(nfMotor.calcularImpostos());
 	}
 }

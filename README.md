@@ -240,3 +240,17 @@
 12.15. Desafio: implementando herança
 12.16. Sobrescrevendo o método Object.equals
 12.17. Boas práticas: obedeça o contrato ao sobrescrever o método equals
+
+### 13. Polimorfismo e Classes Abstratas
+
+13.1. Upcasting de referências
+13.2. O problema que polimorfismo resolve
+13.3. Entendendo o polimorfismo
+13.4. Downcasting de referências
+13.5. Operador instanceof
+13.6. Pattern Matching para o operador instanceof
+13.7. Evitando o uso de instanceof
+13.8. Criando um projeto de faturamento
+13.9. Classes abstratas
+13.10. Métodos abstratos
+13.11. Desafio: polimorfismo e classes abstratas

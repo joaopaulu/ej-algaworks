@@ -1,4 +1,4 @@
-package contaspagar.pagamento;
+package pagamento;
 
 public class Beneficiario {
     private String nome;

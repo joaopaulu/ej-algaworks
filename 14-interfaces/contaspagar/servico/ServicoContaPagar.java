@@ -1,17 +1,19 @@
 package contaspagar.servico;
 
-import contaspagar.pagamento.Beneficiario;
-import contaspagar.pagamento.DocumentoPagavel;
+import pagamento.DocumentoPagavel;
+import pagamento.MetodoPagamento;
+import pagamento.Pix;
 
 public class ServicoContaPagar {
 
-    public void pagar(DocumentoPagavel documento){
-        Beneficiario beneficiario = documento.getBeneficiario();
+    private MetodoPagamento metodoPagamento;
 
-        if(beneficiario.naoPossuiChavePix()){
-            throw new RuntimeException("Beneficiário não possui chave Pix");
-        }
-        System.out.printf("DEBUG: Efetuando PIX para %s no valor de %2f com a chave %s%n",
-                beneficiario.getNome(), documento.getValorTotal(), beneficiario.getChavePix());
+    public ServicoContaPagar(MetodoPagamento metodoPagamento) {
+        this.metodoPagamento = metodoPagamento;
+    }
+
+    public void pagar(DocumentoPagavel documento){
+
+        metodoPagamento.pagar(documento);
     }
 }

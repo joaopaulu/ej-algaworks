@@ -1,9 +1,10 @@
 package financeira.servico;
 
 import financeira.modelo.Empresa;
+import financeira.modelo.EmpresaFinanciavel;
 
 public class ServicoFinanciamento {
-    public void solicitarFinanciamento(Empresa empresa, double valorSolicitado) {
+    public void solicitarFinanciamento(EmpresaFinanciavel empresa, double valorSolicitado) {
         double limiteAprovado = empresa.calcularLimiteAprovado();
 
         if (limiteAprovado < valorSolicitado) {
@@ -17,7 +18,7 @@ public class ServicoFinanciamento {
                 limiteAprovado);
     }
 
-    public double consultarLimiteAprovado(Empresa empresa) {
+    public double consultarLimiteAprovado(EmpresaFinanciavel empresa) {
         // aqui poderia registrar a consulta em algum lugar para um consultor comercial entrar em contato
         // com o cliente (não vamos fazer isso, porque o objetivo agora é estudar OO primeiro)
 

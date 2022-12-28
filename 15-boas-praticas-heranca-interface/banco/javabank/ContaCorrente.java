@@ -5,7 +5,7 @@ public class ContaCorrente implements Conta{
 
     @Override
     public double getSaldo() {
-        return 0;
+        return saldo;
     }
 
     @Override

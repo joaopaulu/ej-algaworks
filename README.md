@@ -272,3 +272,14 @@
 14.13. Implementando múltiplas interfaces
 14.14. Herança de interfaces
 14.15. Desafio: interfaces
+
+### 15. Boas práticas de herança e inteerface
+
+15.1. Rigidez do código com herança
+15.2. Boas práticas: prefira composição em vez de herança de classes
+15.3. Código frágil: alto acoplamento com herança
+15.4. Boas práticas: reduzindo acoplamento com composição
+15.5. Decorator Pattern: consolidando os conhecimentos
+15.6. Boas práticas: projete interfaces com cuidado
+15.7. Boas práticas: use interfaces apenas para definir tipos
+15.8. Boas práticas: referencie objetos por suas interfaces

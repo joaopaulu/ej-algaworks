@@ -21,8 +21,12 @@ public class Principal {
     }
 
     private static void efetuarBaixaEstoque(Produto produto, int quantidade) {
-        produto.retirarEstoque(quantidade);
-        System.out.printf("%d unidade retiradas do estoque. Estoque atual: %d%n",
-                quantidade, produto.getQuantidadeEstoque());
+        try {
+            produto.retirarEstoque(quantidade);
+            System.out.printf("%d unidade retiradas do estoque. Estoque atual: %d%n",
+                    quantidade, produto.getQuantidadeEstoque());
+        } catch (IllegalArgumentException e) {
+            System.out.println("Erro ao efetuar baixa no estoque: " + e.getMessage());
+        }
     }
 }

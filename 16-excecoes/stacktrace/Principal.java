@@ -23,20 +23,26 @@ public class Principal {
 
                 break;
             } catch (IllegalArgumentException e) {
-                e.printStackTrace(System.out);
-                e.printStackTrace();
                 System.out.println("Erro na compra: " + e.getMessage());
+            } catch (IllegalStateException ise) {
+                System.out.println("Erro na compra: " + ise.getMessage());
+
+                System.out.println("Deseja ativar o produto? ");
+
+                if (scanner.nextBoolean()) {
+                    produto.ativar();
+                    System.out.println("Ok. Produto já foi ativado");
+                } else {
+                    System.out.println("Ok Compra não pode ser realizada");
+                    break;
+                }
             }
         } while (true);
     }
 
     private static void efetuarBaixaEstoque(Produto produto, int quantidade) {
-        try {
-            produto.retirarEstoque(quantidade);
-            System.out.printf("%d unidade retiradas do estoque. Estoque atual: %d%n",
-                    quantidade, produto.getQuantidadeEstoque());
-        } catch (IllegalArgumentException e) {
-            System.out.println("Erro ao efetuar baixa no estoque: " + e.getMessage());
-        }
+        produto.retirarEstoque(quantidade);
+        System.out.printf("%d unidade retiradas do estoque. Estoque atual: %d%n",
+                quantidade, produto.getQuantidadeEstoque());
     }
 }

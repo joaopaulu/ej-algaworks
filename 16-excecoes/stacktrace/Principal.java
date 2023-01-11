@@ -13,11 +13,21 @@ public class Principal {
 
     private static void comprar(Produto produto) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Quantidade: ");
-        int quantidade = scanner.nextInt();
+        do {
+            try {
+                System.out.print("Quantidade: ");
+                int quantidade = scanner.nextInt();
 
-        efetuarBaixaEstoque(produto, quantidade);
-        System.out.println("Compra realizada");
+                efetuarBaixaEstoque(produto, quantidade);
+                System.out.println("Compra realizada");
+
+                break;
+            } catch (IllegalArgumentException e) {
+                e.printStackTrace(System.out);
+                e.printStackTrace();
+                System.out.println("Erro na compra: " + e.getMessage());
+            }
+        } while (true);
     }
 
     private static void efetuarBaixaEstoque(Produto produto, int quantidade) {

@@ -273,7 +273,7 @@
 14.14. Herança de interfaces
 14.15. Desafio: interfaces
 
-### 15. Boas práticas de herança e inteerface
+### 15. Boas práticas de herança e interface
 
 15.1. Rigidez do código com herança
 15.2. Boas práticas: prefira composição em vez de herança de classes
@@ -283,3 +283,16 @@
 15.6. Boas práticas: projete interfaces com cuidado
 15.7. Boas práticas: use interfaces apenas para definir tipos
 15.8. Boas práticas: referencie objetos por suas interfaces
+
+### 16. Exceções
+
+16.1 Introdução às exceções
+16.2 Lançando exceções
+16.3 Stack Trace: interpretando e analisando exceções
+16.4 Capturando exceções com try/catch
+16.5 Relançando exceções e printStackTrace
+16.6 Capturando exceções com múltiplos blocos catch
+16.7 Hierarquia das exceções, checked e unchecked exceptions
+16.8 Capturando checked exceptions
+16.9 Criando exceções customizadas
+16.10 Variáveis de instância em exceções customizadas

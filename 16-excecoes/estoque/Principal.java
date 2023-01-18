@@ -1,8 +1,7 @@
 package estoque;
 
+import estoque.exception.BaixaEstoqueException;
 import estoque.exception.ProdutoException;
-import estoque.exception.ProdutoInativoException;
-import estoque.exception.ProdutoSemEstoqueException;
 
 import java.util.Scanner;
 
@@ -27,32 +26,23 @@ public class Principal {
                 System.out.println("Compra realizada");
 
                 break;
-            } catch (IllegalArgumentException iae) {
-                System.out.println("Erro na compra: " + iae.getMessage());
-          /*  } catch (ProdutoSemEstoqueException e) {
-                System.out.printf("Erro na compra: %s. Estoque disponível: %d. Estoque necessário: %d%n",
-                       e.getMessage(), e.getEstoqueDisponivel(), e.getEstoqueNecessario());*/
-            } catch (ProdutoInativoException e) {
-                System.out.println("Erro na compra: " + e.getMessage());
 
-                System.out.print("Deseja ativar o produto? ");
-
-                if (scanner.nextBoolean()) {
-                    produto.ativar();
-                    System.out.println("Ok. Produto já foi ativado");
-                } else {
-                    System.out.println("Ok. Compra não pode ser realizada");
-                    break;
-                }
-            } catch (ProdutoException e){
-                System.out.println("Erro na compra: " + e.getMessage());
+            } catch (BaixaEstoqueException e){
+                System.out.println("Erro na compra: " + e.getCause().getMessage());
             }
         } while (true);
     }
 
-    private static void efetuarBaixaEstoque(Produto produto, int quantidade) throws ProdutoSemEstoqueException, ProdutoInativoException {
-        produto.retirarEstoque(quantidade);
-        System.out.printf("%d unidades retiradas do estoque. Estoque atual: %d%n",
-                quantidade, produto.getQuantidadeEstoque());
+    private static void efetuarBaixaEstoque(Produto produto, int quantidade)
+            throws BaixaEstoqueException {
+       try {
+           produto.retirarEstoque(quantidade);
+           System.out.printf("%d unidade retiradas do estoque. Estoque atual: %d%n",
+                   quantidade,produto.getQuantidadeEstoque());
+       }catch (IllegalArgumentException e){
+           throw new BaixaEstoqueException("Erro ao realizar baixa no estoque", e);
+       }catch (ProdutoException e){
+           throw new BaixaEstoqueException("Erro ao realizar baixa no estoque", e);
+       }
     }
 }

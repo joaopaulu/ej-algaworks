@@ -1,5 +1,6 @@
 package estoque;
 
+import estoque.exception.ProdutoException;
 import estoque.exception.ProdutoInativoException;
 import estoque.exception.ProdutoSemEstoqueException;
 
@@ -28,9 +29,9 @@ public class Principal {
                 break;
             } catch (IllegalArgumentException iae) {
                 System.out.println("Erro na compra: " + iae.getMessage());
-            } catch (ProdutoSemEstoqueException e) {
+          /*  } catch (ProdutoSemEstoqueException e) {
                 System.out.printf("Erro na compra: %s. Estoque disponível: %d. Estoque necessário: %d%n",
-                        e.getMessage(), e.getEstoqueDisponivel(), e.getEstoqueNecessario());
+                       e.getMessage(), e.getEstoqueDisponivel(), e.getEstoqueNecessario());*/
             } catch (ProdutoInativoException e) {
                 System.out.println("Erro na compra: " + e.getMessage());
 
@@ -43,6 +44,8 @@ public class Principal {
                     System.out.println("Ok. Compra não pode ser realizada");
                     break;
                 }
+            } catch (ProdutoException e){
+                System.out.println("Erro na compra: " + e.getMessage());
             }
         } while (true);
     }

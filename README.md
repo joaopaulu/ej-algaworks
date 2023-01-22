@@ -296,3 +296,15 @@
 16.8 Capturando checked exceptions
 16.9 Criando exceções customizadas
 16.10 Variáveis de instância em exceções customizadas
+16.11. Lançando e propagando checked exceptions
+16.12. Capturando exceções menos específicas (upcasting)
+16.13. Capturando e lançando nova exceção
+16.14. Boa prática: embrulhe a causa raiz
+16.15. Capturando exceções com multi-catch
+16.16. Usando a cláusula finally
+16.17. IntelliJ IDEA: lançando exceções na ferramenta de debug
+16.18. IntelliJ IDEA: adicionando Java Exception Breakpoints
+16.19. Boas práticas: lance exceções ao invés de retornar null
+16.20. Boas práticas: não engula exceções
+16.21. Desafio: exceções
+

@@ -1,5 +1,7 @@
 package crm;
 
+import employee.Cliente;
+
 public class Principal {
     public static void main(String[] args) {
         ServicoCadastroCliente servicoCadastroCliente = new ServicoCadastroCliente();

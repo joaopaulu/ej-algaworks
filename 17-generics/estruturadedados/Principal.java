@@ -1,15 +1,27 @@
 package estruturadedados;
 
 public class Principal {
+
     public static void main(String[] args) {
-        Pilha<Produto> pilha = new Pilha<>();
-        pilha.colocar(new Produto("Arroz"));
-        pilha.colocar(new Produto("Feijão"));
+        Colecao<Produto> produtos = new Fila<>();
+        produtos.colocar(new Produto("Arroz"));
+        produtos.colocar(new Produto("Feijão"));
+        produtos.colocar(new Produto("Água de coco"));
 
-        Produto produto = pilha.retirar();
-        System.out.println(produto.getDescricao());
-
-        produto = pilha.retirar();
-        System.out.println(produto.getDescricao());
+        retirarTodos(produtos);
     }
+
+    private static void retirarTodos(Colecao<Produto> produtos) {
+        try {
+            int i = 1;
+            while (true) {
+                Produto produto = produtos.retirar();
+                System.out.printf("%d. %s%n", i, produto.getDescricao());
+                i++;
+            }
+        } catch (ColecaoVaziaException e) {
+            System.out.println("Coleção de produtos esgotada");
+        }
+    }
+
 }

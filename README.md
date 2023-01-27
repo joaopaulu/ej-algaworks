@@ -308,3 +308,12 @@
 16.20. Boas práticas: não engula exceções
 16.21. Desafio: exceções
 
+### 17. Generics
+
+17.1. Introdução aos Generics
+17.2. Implementando métodos genéricos
+17.3. Delimitando tipos genéricos
+17.4. Criando classes genéricas
+17.5. Criando interfaces genéricas
+17.6. Usando curingas para tipos desconhecidos
+17.7. Desafio: Generics

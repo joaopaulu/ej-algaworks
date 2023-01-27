@@ -3,6 +3,7 @@ package estruturadedados;
 import java.util.Arrays;
 
 public class Fila<T> implements Colecao<T> {
+
     private T[] itens;
 
     public Fila() {

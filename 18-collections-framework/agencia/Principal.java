@@ -12,7 +12,9 @@ public class Principal {
         cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
 
         ArrayList<Hotel> hoteis = cadastro.obterTodos();
-        imprimirHoteis(hoteis);
+        int indice = hoteis.lastIndexOf(new Hotel("Mercure", "Uberlândia/MG",0));
+        System.out.println(indice);
+       // imprimirHoteis(hoteis);
     }
 
     private static  void imprimirHoteis(ArrayList<Hotel> hoteis){

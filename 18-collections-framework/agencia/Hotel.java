@@ -50,4 +50,21 @@ public class Hotel {
                 ", precoDiaria=" + precoDiaria +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Hotel hotel = (Hotel) o;
+
+        if(!nome.equals(hotel.nome)) return false;
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = nome.hashCode();
+        result = 31 * result + cidade.hashCode();
+        return result;
+    }
 }

@@ -1,6 +1,7 @@
 package agencia;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Principal {
     public static void main(String[] args) {
@@ -15,9 +16,10 @@ public class Principal {
         imprimirHoteis(hoteis);
     }
 
-    private static  void imprimirHoteis(ArrayList<Hotel> hoteis){
-        for (int i = 0; i < hoteis.size(); i++) {
-            Hotel hotel = (Hotel) hoteis.get(i);
+    private static void imprimirHoteis(ArrayList<Hotel> hoteis) {
+        Iterator<Hotel> hotelIterator = hoteis.iterator();
+        while (hotelIterator.hasNext()) {
+            Hotel hotel = hotelIterator.next();
             System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
                     hotel.getCidade(), hotel.getPrecoDiaria());
         }

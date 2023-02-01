@@ -1,6 +1,7 @@
 package agencia;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class CadastroHotel {
 
@@ -21,15 +22,14 @@ public class CadastroHotel {
 	}
 
 	public void removerPorCidade(String cidade) {
-		ArrayList<Hotel> hoteisParaRemocao = new ArrayList<>();
-
-		for (int i = 0; i < hoteis.size(); i++) {
-			Hotel hotel = hoteis.get(i);
+		Iterator<Hotel> hotelIterator = hoteis.iterator();
+		while (hotelIterator.hasNext()) {
+			Hotel hotel = hotelIterator.next();
 			if (hotel.getCidade().equals(cidade)) {
-				hoteisParaRemocao.add(hotel);
+				hotelIterator.remove();
+//                hoteis.remove(hotel);
 			}
 		}
-		hoteis.removeAll(hoteisParaRemocao);
 	}
 
 	public void remover(Hotel hotel) {

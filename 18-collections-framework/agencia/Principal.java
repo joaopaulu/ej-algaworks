@@ -2,6 +2,7 @@ package agencia;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class Principal {
     public static void main(String[] args) {
@@ -17,12 +18,18 @@ public class Principal {
     }
 
     private static void imprimirHoteis(ArrayList<Hotel> hoteis) {
-        Iterator<Hotel> hotelIterator = hoteis.iterator();
+        ListIterator<Hotel> hotelIterator = hoteis.listIterator(hoteis.size());
+        while (hotelIterator.hasPrevious()){
+            Hotel hotel = hotelIterator.previous();
+            System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
+                    hotel.getCidade(),hotel.getPrecoDiaria());
+        }
+      /*  Iterator<Hotel> hotelIterator = hoteis.iterator();
         while (hotelIterator.hasNext()) {
             Hotel hotel = hotelIterator.next();
             System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
                     hotel.getCidade(), hotel.getPrecoDiaria());
-        }
+        }*/
     }
 
 }

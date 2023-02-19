@@ -1,6 +1,6 @@
 package agencia;
 
-import java.util.LinkedList;
+import java.util.List;
 import java.util.ListIterator;
 
 public class Principal {
@@ -12,23 +12,17 @@ public class Principal {
         cadastro.adicionar("Tivoli Ecoresort", "Praia do Forte/BA", 2000);
         cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
 
-        LinkedList<Hotel> hoteis = cadastro.obterTodos();
+        List<Hotel> hoteis = cadastro.obterTodos();
         imprimirHoteis(hoteis);
     }
 
-    private static void imprimirHoteis(LinkedList<Hotel> hoteis) {
+    private static void imprimirHoteis(List<Hotel> hoteis) {
         ListIterator<Hotel> hotelIterator = hoteis.listIterator(hoteis.size());
-        while (hotelIterator.hasPrevious()){
+        while (hotelIterator.hasPrevious()) {
             Hotel hotel = hotelIterator.previous();
             System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
-                    hotel.getCidade(),hotel.getPrecoDiaria());
-        }
-      /*  Iterator<Hotel> hotelIterator = hoteis.iterator();
-        while (hotelIterator.hasNext()) {
-            Hotel hotel = hotelIterator.next();
-            System.out.printf("%s (%s) -> %.2f%n", hotel.getNome(),
                     hotel.getCidade(), hotel.getPrecoDiaria());
-        }*/
+        }
     }
 
 }

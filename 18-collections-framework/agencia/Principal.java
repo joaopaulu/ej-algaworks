@@ -1,5 +1,6 @@
 package agencia;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -12,8 +13,10 @@ public class Principal {
         cadastro.adicionar("Tivoli Ecoresort", "Praia do Forte/BA", 2000);
         cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
 
-        List<Hotel> hoteis = cadastro.obterTodos();
-        imprimirHoteis(hoteis);
+        Hotel[] hoteis = cadastro.obterTodosComoArray();
+        System.out.println(Arrays.toString(hoteis));
+        /*List<Hotel> hoteis = cadastro.obterTodos();
+        imprimirHoteis(hoteis);*/
     }
 
     private static void imprimirHoteis(List<Hotel> hoteis) {

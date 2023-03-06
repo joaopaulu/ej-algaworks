@@ -2,7 +2,7 @@ package agencia;
 
 import java.util.Objects;
 
-public class Hotel {
+public class Hotel implements Comparable<Hotel>{
 
     private String nome;
     private String cidade;
@@ -66,5 +66,10 @@ public class Hotel {
         int result = nome.hashCode();
         result = 31 * result + cidade.hashCode();
         return result;
+    }
+
+    @Override
+    public int compareTo(Hotel o) {
+        return getNome().compareTo(o.getNome());
     }
 }

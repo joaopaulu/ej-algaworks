@@ -13,10 +13,10 @@ public class Principal {
         cadastro.adicionar("Tivoli Ecoresort", "Praia do Forte/BA", 2000);
         cadastro.adicionar("Mercure", "Uberlândia/MG", 400);
 
-        Hotel[] hoteis = cadastro.obterTodosComoArray();
-        System.out.println(Arrays.toString(hoteis));
-        /*List<Hotel> hoteis = cadastro.obterTodos();
-        imprimirHoteis(hoteis);*/
+        cadastro.ordenarPorPreco();
+
+        List<Hotel> hoteis = cadastro.obterTodos();
+        imprimirHoteis(hoteis);
     }
 
     private static void imprimirHoteis(List<Hotel> hoteis) {

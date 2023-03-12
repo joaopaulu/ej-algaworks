@@ -1,8 +1,6 @@
 package agencia;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class CadastroHotel {
 
@@ -24,6 +22,15 @@ public class CadastroHotel {
 
     public Hotel[] obterTodosComoArray(){
         return hoteis.toArray(new Hotel[0]);
+    }
+
+    public void ordenar(){
+        Collections.sort(hoteis);
+    }
+
+    public void ordenarPorPreco(){
+        hoteis.sort(new PrecoHotelComparator().reversed()
+                .thenComparing(Comparator.naturalOrder()));
     }
 
     public void removerPorCidade(String cidade) {

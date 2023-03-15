@@ -1,15 +1,28 @@
 package set.crm;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Principal {
     public static void main(String[] args) {
-        Contato contato1 = new Contato("Maria", "maria@algaworks.com", 40);
-        Contato contato2 = new Contato("José", "jose@algaworks.com", 30);
-        Contato contato3 = new Contato("João", "joao@algaworks.com", 25);
-        Contato contato4 = new Contato("João da Silva", "joao@algaworks.com", 80);
+        Set<Contato> contatos = new HashSet<>();
 
-        System.out.println(contato1.hashCode());
-        System.out.println(contato2.hashCode());
-        System.out.println(contato3.hashCode());
-        System.out.println(contato4.hashCode());
+        contatos.add(new Contato("Maria", "maria@algaworks.com", 40));
+        contatos.add(new Contato("Ana", "ana@algaworks.com", 30));
+        contatos.add(new Contato("José", "jose@algaworks.com", 25));
+        contatos.add(new Contato("Rosa", "rosa@algaworks.com", 50));
+        contatos.add(new Contato("João", "joao@algaworks.com", 70));
+        System.out.println("--");
+        contatos.add(new Contato("Josefina", "josefina@algaworks.com", 70));
+        System.out.println("--");
+        contatos.add(new Contato("Josefina", "josefina@algaworks.com", 70));
+        contatos.add(null);
+        System.out.println("--");
+
+//        System.out.println(contatos);
+
+        boolean resultado = contatos.contains(
+                new Contato("Alaor", "alaor@algaworks.com", 30));
+        System.out.println(resultado);
     }
 }

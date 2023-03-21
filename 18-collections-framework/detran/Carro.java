@@ -2,7 +2,7 @@ package detran;
 
 import java.util.Objects;
 
-public class Carro {
+public class Carro implements Comparable<Carro> {
     private final String placa;
     private final String modelo;
 
@@ -40,5 +40,10 @@ public class Carro {
     @Override
     public int hashCode() {
         return Objects.hash(placa);
+    }
+
+    @Override
+    public int compareTo(Carro o) {
+        return getPlaca().compareTo(o.getPlaca());
     }
 }

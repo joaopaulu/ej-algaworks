@@ -2,6 +2,7 @@ package detran;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Principal {
     public static void main(String[] args) {
@@ -15,7 +16,8 @@ public class Principal {
         Carro ford = new Carro("JAV5A67", "Ford Ka");
         Carro porsche = new Carro("EJA0V44", "Porsche 911");
 
-        Map<Carro, Proprietario> proprietarios = new HashMap<>();
+        //Map<Carro, Proprietario> proprietarios = new HashMap<>();
+        Map<Carro, Proprietario> proprietarios = new TreeMap<>();
 
         proprietarios.put(bmw, maria);
         proprietarios.put(honda, ana);

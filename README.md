@@ -317,3 +317,41 @@
 17.5. Criando interfaces genéricas
 17.6. Usando curingas para tipos desconhecidos
 17.7. Desafio: Generics
+
+### 18. Collections Framework
+
+18.1. Por que mais uma API?
+18.2. Introdução às listas e ao tipo List
+18.3. Como funciona a ArrayList
+18.4. Usando listas do tipo ArrayList
+18.5. Iterando em lista com for tradicional
+18.6. Usando listas com Generics
+18.7. Localizando objetos em listas
+18.8. Manipulando objetos da lista
+18.9. Percorrendo a lista com Iterator
+18.10. Percorrendo a lista com ListIterator
+18.11. Percorrendo Iterables com enhanced for
+18.12. LinkedList: mais performance na adição e remoção
+18.13. Usando listas do tipo LinkedList
+18.14. Vector: a lista thread-safe
+18.15. Boas práticas: reduza o acoplamento usando o tipo da interface
+18.16. Convertendo de lista para array
+18.17. Ordenando listas pela ordem natural
+18.18. Boas práticas: considere implementar a interface Comparable
+18.19. Comparators: ordenando listas com outros critérios
+18.20. Desafio: listas
+18.21. Introdução aos conjuntos e ao tipo Set
+18.22. Usando conjuntos do tipo HashSet
+18.23. Tabelas de espalhamento (hash tables)
+18.24. Implementando o método hashCode
+18.25. Testando a implementação de hashCode com HashSet
+18.26. Usando conjuntos do tipo TreeSet
+18.27. Usando conjuntos do tipo LinkedHashSet
+18.28. Desafio: conjuntos
+18.29. Introdução aos mapas e ao tipo Map
+18.30. Usando mapas dos tipos HashMap e Hashtable
+18.31. LinkedHashTable e TreeMap: outras implementações de mapas
+18.32. Desafio: mapas
+18.33. Boas práticas: encapsulamento com coleções não-modificáveis
+18.34. Coleções imutáveis
+18.35. Usando a API de List para manipular arrays

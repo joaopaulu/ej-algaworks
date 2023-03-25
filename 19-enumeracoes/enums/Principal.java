@@ -7,7 +7,6 @@ public class Principal {
         pedido.setStatus(StatusPedido.EMITIDO);
         pedido.setOrigem(OrigemPedido.ONLINE);
 
-        System.out.println(pedido.getStatus());
-        System.out.println(pedido.getOrigem());
+        System.out.println(pedido.getTempoEntregaEmHoras());
     }
 }

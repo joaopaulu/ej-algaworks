@@ -28,4 +28,8 @@ public class Pedido {
     public void setOrigem(OrigemPedido origem) {
         this.origem = origem;
     }
+
+    public int getTempoEntregaEmHoras(){
+        return status.getTempoEntregaEmHoras();
+    }
 }

@@ -273,7 +273,7 @@
 14.14. Herança de interfaces
 14.15. Desafio: interfaces
 
-### 15. Boas práticas de herança e interface
+### 15. Boas práticas de Herança e Interface
 
 15.1. Rigidez do código com herança
 15.2. Boas práticas: prefira composição em vez de herança de classes
@@ -355,3 +355,15 @@
 18.33. Boas práticas: encapsulamento com coleções não-modificáveis
 18.34. Coleções imutáveis
 18.35. Usando a API de List para manipular arrays
+
+### 19. Enumerações
+
+19.1. Usando enumerações à moda antiga
+19.2. Criando tipos Enum
+19.3. Diagrama de classes: enumeração
+19.4. Usando os métodos do tipo Enum
+19.5. Declarando e inicializando propriedades e construtores
+19.6. Implementando métodos
+19.7. Implementando métodos abstratos
+19.8. Boas práticas: substitua parâmetros booleanos por enums
+19.9. Desafio: enumerações

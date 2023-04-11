@@ -367,3 +367,20 @@
 19.7. Implementando métodos abstratos
 19.8. Boas práticas: substitua parâmetros booleanos por enums
 19.9. Desafio: enumerações
+
+### 20. Trabalhando com strings
+
+20.1. Comparação de strings
+20.2. Pool de strings
+20.3. Validando o conteúdo de strings
+20.4. Extraindo trechos da String com indexOf e substring
+20.5. Extraindo trechos da String com lastIndexOf e substring
+20.6. Transformando strings
+20.7. Implementando algoritmos usando os métodos da classe String
+20.8. Desafio: validação de e-mail
+20.9. Testando correspondências de strings com expressões regulares
+20.10. Web Scraping: buscando correspondências com Pattern e Matcher
+20.11. Manipulando strings com expressões regulares
+20.12. Boas práticas: use StringBuilder para mais performance
+20.13. Código mais limpo com Text blocks
+20.14. Desafio: Text blocks e expressões regulares

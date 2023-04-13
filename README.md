@@ -368,7 +368,7 @@
 19.8. Boas práticas: substitua parâmetros booleanos por enums
 19.9. Desafio: enumerações
 
-### 20. Trabalhando com strings
+### 20. Trabalhando com Strings
 
 20.1. Comparação de strings
 20.2. Pool de strings
@@ -384,3 +384,17 @@
 20.12. Boas práticas: use StringBuilder para mais performance
 20.13. Código mais limpo com Text blocks
 20.14. Desafio: Text blocks e expressões regulares
+
+### 21. Trabalhando com Números
+
+21.1. Comparando números da forma correta
+21.2. Caching de classes wrapper
+21.3. Operações matemáticas com java.lang.Math
+21.4. Boas práticas: evite float e double se precisão é importante
+21.5. Precisão nos cálculos com BigDecimal
+21.6. Divisão de BigDecimal e formas de arredondamento
+21.7. Formatação decimal com DecimalFormat
+21.8. Localizando a formatação de números com Locale
+21.9. Formatação numérica compacta
+21.10. Transformando String em números com DecimalFormat
+21.11. Desafio: formatação numérica

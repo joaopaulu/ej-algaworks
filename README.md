@@ -398,3 +398,52 @@
 21.9. Formatação numérica compacta
 21.10. Transformando String em números com DecimalFormat
 21.11. Desafio: formatação numérica
+
+### 22. Date e Calendar: as APIs legadas
+
+22.1. Entendendo os fusos horários
+22.2. Instanciando datas com o tipo Date
+22.3. Calculando e comparando datas com Date
+22.4. Formatando Date para String
+22.5. Convertendo de String para Date
+22.6. Conhecendo o tipo Calendar
+22.7. Obtendo unidades de tempo e atribuindo uma Date em Calendar
+22.8. Operações de datas com o tipo Calendar
+22.9. Comparando datas com o tipo Calendar
+22.10. Desafio: calculando datas com Calendar
+
+### 23. Date/Time API: mais nova e moderna
+
+23.1. Introdução à Date and Time API e ao padrão ISO-8601
+23.2. Instant: representando um momento na linha do tempo
+23.3. LocalDate: representando apenas a data
+23.4. LocalTime: representando apenas o horário
+23.5. LocalDateTime: representando data e hora
+23.6. Outras formas de obter instâncias de LocalDate, LocalTime e LocalDateTime
+23.7. Formatando data/hora da nova API
+23.8. Convertendo de String para objetos temporais
+23.9. Desafio: LocalDate, LocalTime e LocalDateTime
+23.10. Obtendo campos de objetos temporais e a enum ChronoField
+23.11. Alterando campos de objetos temporais com métodos with
+23.12. Adicionando e subtraindo objetos temporais com métodos de conveniência
+23.13. Calculando objetos temporais com ChronoUnit
+23.14. Desafio: calculadora de parcelas
+23.15. Representando períodos com a classe Period
+23.16. Calculando períodos de objetos temporais
+23.17. Representando durações com a classe Duration
+23.18. Calculando durações de objetos temporais
+23.19. Desafio: calculando período
+23.20. DayOfWeek: representando o dia da semana
+23.21. Year: representando o ano
+23.22. Month: representando o mês
+23.23. MonthDay: representando o dia do mês
+23.24. YearMonth: representando o mês do ano
+23.25. Alterando campos de objetos temporais com TemporalAdjusters
+23.26. Comparando objetos temporais
+23.27. Desafio: TemporalAdjuster
+23.28. Identificando fusos com ZoneId e ZoneOffset
+23.29. Instanciando objetos temporais em um fuso horário específico
+23.30. ZonedDateTime: data/hora com fuso horário
+23.31. Calculando e convertendo de/para ZonedDateTime
+23.32. OffsetDateTime e OffsetTime: data e hora com deslocamento do UTC
+23.33. Desafio: trabalhando com fuso horário

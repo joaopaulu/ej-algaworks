@@ -447,3 +447,15 @@
 23.31. Calculando e convertendo de/para ZonedDateTime
 23.32. OffsetDateTime e OffsetTime: data e hora com deslocamento do UTC
 23.33. Desafio: trabalhando com fuso horário
+
+###24. Classes aninhadas
+
+24.1. Introdução às classes aninhadas
+24.2. Classes aninhadas estáticas
+24.3. Modificadores de acesso de classes aninhadas
+24.4. Enum como membro estático de uma classe
+24.5. Classes aninhadas não-estáticas
+24.6. Shadowing em classes aninhadas
+24.7. Classes locais
+24.8. Classes anônimas
+24.9. Desafio: classes aninhadas

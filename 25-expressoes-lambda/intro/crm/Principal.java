@@ -11,14 +11,10 @@ public class Principal {
 		cadastroCliente.adicionar(new Cliente("Joaquina", 45));
 		cadastroCliente.adicionar(new Cliente("Josefina", 25));
 
-		Filtro<Cliente> filtro = new Filtro<Cliente>() {
-			@Override
-			public boolean avaliar(Cliente cliente) {
-				return cliente.getIdade() > 40;
-			}
-		};
-
-		List<Cliente> clientes = cadastroCliente.consultar(filtro);
+		List<Cliente> clientes = cadastroCliente.consultar((Cliente cliente) ->{
+			boolean resultado = cliente.getIdade() > 40;
+			return resultado;
+		});
 
 		for (Cliente cliente : clientes) {
 			System.out.printf("%s - %d%n", cliente.getNome(), cliente.getIdade());

@@ -11,7 +11,10 @@ public class Principal {
 		cadastroCliente.adicionar(new Cliente("Joaquina", 45));
 		cadastroCliente.adicionar(new Cliente("Josefina", 25));
 
+		int y = 1;
+
 		List<Cliente> clientes = cadastroCliente.consultar((Cliente cliente) ->{
+			System.out.println(y);
 			boolean resultado = cliente.getIdade() > 40;
 			return resultado;
 		});

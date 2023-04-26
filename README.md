@@ -448,7 +448,7 @@
 23.32. OffsetDateTime e OffsetTime: data e hora com deslocamento do UTC
 23.33. Desafio: trabalhando com fuso horário
 
-###24. Classes aninhadas
+### 24. Classes aninhadas
 
 24.1. Introdução às classes aninhadas
 24.2. Classes aninhadas estáticas
@@ -460,7 +460,7 @@
 24.8. Classes anônimas
 24.9. Desafio: classes aninhadas
 
-###25. Expressões Lambda e Method Reference
+### 25. Expressões Lambda e Method Reference
 
 25.1. Introdução ao módulo
 25.2. Implementando Expressões Lambda

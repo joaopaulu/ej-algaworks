@@ -459,3 +459,23 @@
 24.7. Classes locais
 24.8. Classes anônimas
 24.9. Desafio: classes aninhadas
+
+###25. Expressões Lambda e Method Reference
+
+25.1. Introdução ao módulo
+25.2. Implementando Expressões Lambda
+25.3. Entendendo as interfaces funcionais
+25.4. Usando a interface @FunctionalInterface
+25.5. Boas práticas: prefira lambdas a classes anônimas
+25.6. Boas práticas: torne as lambdas mais concisas
+25.7. Implementando Comparator com lambda
+25.8. Boas práticas: prefira interfaces funcionais padrão
+25.9. As 4 principais interfaces funcionais
+25.10. Interface funcional Predicate: removendo elementos de coleções
+25.11. Interface funcional Consumer: iterando em coleções com forEach
+25.12. Interface funcional Function: ordenando lista com Comparator.comparing
+25.13. Usando Method References
+25.14. Referenciando métodos de uma instância particular
+25.15. Referenciando métodos estáticos
+25.16. Referenciando construtores
+25.17. Desafio: expressões lambda e method reference

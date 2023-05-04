@@ -17,13 +17,9 @@ public class ServicoDeBagagem {
         }
         // aqui poderia ter outras regras de negócio
 
-        Reserva reserva = servicoDeReserva.buscar(codigoReserva);
-
-        if (reserva == null) {
-            throw new ReservaNaoEncontradaException("Reserva não existe");
-        }
-
-        reserva.adicionarBagagens(quantidadeBagagens);
+        servicoDeReserva.buscar(codigoReserva)
+                .orElseThrow(() -> new ReservaNaoEncontradaException("Reserva não existe"))
+                .adicionarBagagens(quantidadeBagagens);
     }
 
 }

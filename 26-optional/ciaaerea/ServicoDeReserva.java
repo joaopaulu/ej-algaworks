@@ -1,38 +1,37 @@
 package ciaaerea;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.function.Supplier;
 
 public class ServicoDeReserva {
 
-    private final Set<Reserva> reservas = new HashSet<>();
+	private final Set<Reserva> reservas = new HashSet<>();
 
-    public Collection<Reserva> getReservas() {
-        return Collections.unmodifiableSet(reservas);
-    }
+	public Collection<Reserva> getReservas() {
+		return Collections.unmodifiableSet(reservas);
+	}
 
-    public void adicionar(Reserva reserva) {
-        boolean reservaAdicionada = reservas.add(reserva);
+	public void adicionar(Reserva reserva) {
+		boolean reservaAdicionada = reservas.add(reserva);
 
-        if (!reservaAdicionada) {
-            throw new RuntimeException(
-                    String.format("Reserva %s já existe", reserva.getCodigo()));
-        }
-    }
+		if (!reservaAdicionada) {
+			throw new RuntimeException(
+					String.format("Reserva %s já existe", reserva.getCodigo()));
+		}
+	}
 
-    public Reserva buscar(String codigo) {
-        Reserva reservaEncontrada = null;
+	public Reserva buscar(String codigo, Supplier<Reserva> supplierNaoExiste) {
+		return buscar(codigo).orElseGet(supplierNaoExiste);
+	}
 
-        for (Reserva reserva : reservas) {
-            if (reserva.getCodigo().equals(codigo)) {
-                reservaEncontrada = reserva;
-                break;
-            }
-        }
+	public Optional<Reserva> buscar(String codigo) {
+		for (Reserva reserva : reservas) {
+			if (reserva.getCodigo().equals(codigo)) {
+				return Optional.of(reserva);
+			}
+		}
 
-        return reservaEncontrada;
-    }
+		return Optional.empty();
+	}
 
 }

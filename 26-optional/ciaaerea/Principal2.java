@@ -12,10 +12,12 @@ public class Principal2 {
 
 		servicoDeBagagem.contratar("28A888", 1);
 
-		Reserva reserva = servicoDeReserva.buscar("28A888").filter(r -> r.getQuantidadeBagagens() > 0)
+		Passageiro passageiro = servicoDeReserva.buscar("28AXXX")
+				.filter(r -> r.getQuantidadeBagagens() > 0)
+				.map(Reserva::getPassageiro)
 				.orElseThrow(RuntimeException::new);
 
-		System.out.println(reserva);
+		System.out.println(passageiro);
 
 	}
 }

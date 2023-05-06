@@ -479,3 +479,18 @@
 25.15. Referenciando métodos estáticos
 25.16. Referenciando construtores
 25.17. Desafio: expressões lambda e method reference
+
+### 26. Optional
+
+26.1. O jeito tradicional de evitar NPE
+26.2. Evoluindo seu código com Optional
+26.3. Testando valor do Optional com isPresent
+26.4. Obtendo valor e lançando exceção com orElseThrow
+26.5. Obtendo valor alternativo com orElse e orElseGet
+26.6. Obtendo e testando valor com ifPresent e ifPresentOrElse
+26.7. Testando e filtrando valor com Predicate
+26.8. Aplicando transformações com map
+26.9. Aplicando transformações com flatMap
+26.10. Tipos especiais de Optional para tipos primitivos
+26.11. Boas práticas ao usar Optional
+26.12. Desafio: Optional

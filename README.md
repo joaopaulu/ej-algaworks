@@ -494,3 +494,35 @@
 26.10. Tipos especiais de Optional para tipos primitivos
 26.11. Boas práticas ao usar Optional
 26.12. Desafio: Optional
+
+### 27. Streams API
+
+27.1. Introdução à Streams API e operações básicas
+27.2. Operação intermediária: Stream.filter
+27.3. Operação terminal: Stream.forEach
+27.4. Criando o pipeline com encadeamento de operações
+27.5. Executando ações intermediárias com o método Stream.peek
+27.6. Operações terminais de curto-circuito: findFirst e findAny
+27.7. Testando predicados com Stream.anyMatch, Stream.allMatch e Stream.noneMatch
+27.8. Ordenando elementos de Streams
+27.9. Entendendo o que é uma operação intermediária com estado (stateful)
+27.10. Aplicando transformações com Stream.map
+27.11. Obtendo um Stream de elementos distintos
+27.12. Achatando um Stream com Stream.flatMap
+27.13. Usando as especializações de Stream para tipos primitivos
+27.14. Entendendo as operações de redução com Stream.reduce
+27.15. Reduzindo em BigDecimal e usando a função de combinação
+27.16. Operações de redução que retornam Optional
+27.17. Operações de redução especiais: sum, average e count
+27.18. Operações de redução especiais: min e max
+27.19. Coletando elementos do Stream em lista com Stream.collect
+27.20. Usando coletores padrão da classe Collectors
+27.21. Usando coletores de listas não-modificáveis
+27.22. Coletando elementos do Stream em mapas
+27.23. Gerando mapas agrupados com Collectors.groupingBy
+27.24. Gerando mapas agrupados com valores agregados
+27.25. Gerando mapas particionados com Collectors.partitioningBy
+27.26. Outras formas de obter instâncias de Stream
+27.27. Métodos Objects.isNull e Objects.nonNull
+27.28. Boas práticas: prefira funções em streams sem efeito colateral
+27.29. Desafio: Streams

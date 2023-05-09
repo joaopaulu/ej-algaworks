@@ -10,13 +10,11 @@ public class Principal {
         var cadastroProduto = new CadastroProduto();
         List<Produto> produtos = cadastroProduto.obterTodos();
 
-        boolean temProdutoComEstoque = produtos.stream()
-                .peek(System.out::println)
+        produtos.stream()
                 .filter(Produto::temEstoque)
-//                .sorted(Comparator.comparingInt(Produto::getQuantidade))
-                .anyMatch(Produto::temEstoque);
-
-        System.out.println(temProdutoComEstoque);
+                .map(Produto::getFabricante)
+                .distinct()
+                .forEach(System.out::println);
     }
 
 }

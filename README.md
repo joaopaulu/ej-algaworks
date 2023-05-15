@@ -526,3 +526,24 @@
 27.27. Métodos Objects.isNull e Objects.nonNull
 27.28. Boas práticas: prefira funções em streams sem efeito colateral
 27.29. Desafio: Streams
+
+### 28.Manipulando arquivos com a API clássica de I/O
+
+28.1. Introdução à API clássica de I/O
+28.2. Instanciando e criando arquivos e pastas com a classe File
+28.3. Obtendo o caminho absoluto e canônico de File
+28.4. Excluindo, renomeando e movendo arquivos e pastas
+28.5. Obtendo informações de arquivos e diretórios
+28.6. Listando arquivos e diretórios
+28.7. Entendendo I/O streams e Byte-oriented streams
+28.8. Lendo arquivos com FileInputStream
+28.9. Boa prática: tratando IOException com try-with-resources
+28.10. Escrevendo arquivos com FileOutputStream
+28.11. Conhecendo Character-oriented streams
+28.12. Lendo arquivos de texto com FileReader
+28.13. Escrevendo arquivos de texto com FileWriter
+28.14. Lendo arquivos texto de forma otimizada com BufferedReader
+28.15. Escrevendo arquivos texto de forma otimizada com BufferedWriter
+28.16. Reconhecendo a API de I/O em System.in e Scanner
+28.17. Reconhecendo a API de I/O em System.out e a classe PrintStream
+28.18. Desafio: API clássica de I/O

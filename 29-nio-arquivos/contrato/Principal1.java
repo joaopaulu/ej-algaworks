@@ -1,4 +1,4 @@
-package docs.contrato;
+package contrato;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -547,3 +547,27 @@
 28.16. Reconhecendo a API de I/O em System.in e Scanner
 28.17. Reconhecendo a API de I/O em System.out e a classe PrintStream
 28.18. Desafio: API clássica de I/O
+
+### 29. Manipulando arquivos com NIO.2
+
+29.1. Introdução ao NIO e NIO.23m 36s
+29.2. Representando arquivos e pastas com a classe Path
+29.3. Trabalhando com caminhos absolutos e relativos
+29.4. Operações básicas com a classe Files
+29.5. Copiando arquivos e diretórios
+29.6. Movendo arquivos e diretórios
+29.7. Excluindo arquivos e diretórios
+29.8. Realizando operações com Files.walkFileTree
+29.9. Obtendo informações de arquivos e diretórios
+29.10. Listando conteúdo de diretórios
+29.11. Pesquisando arquivos em uma pasta e subpastas
+29.12. Entendendo os buffers e usando ByteBuffer
+29.13. Usando CharBuffer
+29.14. Decodificando ByteBuffer em CharBuffer
+29.15. Lendo arquivos com ByteChannel
+29.16. Lendo arquivos com buffers menores
+29.17. Escrevendo arquivos com ByteChannel
+29.18. Usando a API de I/O clássica com implementações da NIO
+29.19. Simplificando a leitura de arquivos com a classe Files
+29.20. Simplificando a escrita de arquivos com a classe Files
+29.21. Desafio: NIO.2

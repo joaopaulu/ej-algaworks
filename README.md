@@ -571,3 +571,14 @@
 29.19. Simplificando a leitura de arquivos com a classe Files
 29.20. Simplificando a escrita de arquivos com a classe Files
 29.21. Desafio: NIO.2
+
+### 30. Serialização de objetos
+
+30.1. Introdução à serialização de objetos
+30.2. Tornando classes serializáveis com a interface Serializable
+30.3. Serializando objetos com ObjectOutputStream
+30.4. Desserializando objetos com ObjectInputStream
+30.5. Ignorando propriedades com transient
+30.6. Entendendo e gerando serialVersionUID
+30.7. Boas práticas de serialização e serialVersionUID
+30.8. Desafio: serialização de objetos

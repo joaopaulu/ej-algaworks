@@ -582,3 +582,24 @@
 30.6. Entendendo e gerando serialVersionUID
 30.7. Boas práticas de serialização e serialVersionUID
 30.8. Desafio: serialização de objetos
+
+### 31. Arquivos JAR e Apache Maven
+
+31.1. O que são os arquivos JAR
+31.2. Gerando arquivos JAR como bibliotecas
+31.3. Importando arquivos JAR no projeto
+31.4. Usando bibliotecas terceiras
+31.5. Gerando arquivos JAR executáveis
+31.6. O que é Apache Maven?
+31.7. Instalando o Apache Maven no Windows
+31.8. Instalando o Apache Maven no macOS e Linux
+31.9. Criando um projeto Maven com IntelliJ IDEA
+31.10. Arquivo pom.xml e Maven Coordinates
+31.11. Entendendo o Standard Directory Layout
+31.12. Compilando e empacotando com Maven
+31.13. Conhecendo os tipos de repositórios Maven
+31.14. Instalando e adicionando dependências com Maven
+31.15. Usando dependência do Maven Central Repository
+31.16. Entendendo as dependências transitivas
+31.17. Entendendo os plugins do Maven e o Super POM
+31.18. Gerando Fat JAR com Maven Assembly Plugin

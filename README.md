@@ -603,3 +603,20 @@
 31.16. Entendendo as dependências transitivas
 31.17. Entendendo os plugins do Maven e o Super POM
 31.18. Gerando Fat JAR com Maven Assembly Plugin
+
+### 32. Java Logging API, Logback e SLF4J
+
+32.1. Por que fazer logging?
+32.2. Principais frameworks de logging
+32.3. Usando o Java Logging API (JUL)
+32.4. Conhecendo os níveis de log do JUL
+32.5. Registrando um log de exceção com JUL
+32.6. Criando logging.properties e configurando nível de log
+32.7. Salvando logs em arquivos com FileHandler do JUL
+32.8. Usando a Java Logging API com SLF4J
+32.9. Usando o Logback com SLF4J
+32.10. Conhecendo os níveis de log do Logback e SLF4J
+32.11. Configurando a saída de logs com logback.xml
+32.12. Customizando mais o padrão de layout do Encoder
+32.13. Salvando logs em arquivos com FileAppender do Logback
+32.14. Desafio: Logback e SLF4J

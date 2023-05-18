@@ -620,3 +620,18 @@
 32.12. Customizando mais o padrão de layout do Encoder
 32.13. Salvando logs em arquivos com FileAppender do Logback
 32.14. Desafio: Logback e SLF4J
+
+### 33. Banco de dados e JDBC
+
+33.1. Introdução ao MySQL
+33.2. Instalando o MySQL Server
+33.3. Instalando o MySQL Workbench
+33.4. Criando uma tabela no banco de dados
+33.5. Introdução ao JDBC
+33.6. Adicionando driver JDBC ao projeto e criando uma conexão
+33.7. Executando consultas SQL com Statement
+33.8. Realizando consultas SQL com a cláusula where
+33.9. Executando consultas SQL com PreparedStatement
+33.10. Executando comandos que alteram dados (DML)
+33.11. Obtendo código de autoincremento gerado
+33.12. Gerenciando transações com o banco de dados

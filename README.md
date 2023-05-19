@@ -649,3 +649,15 @@
 34.9. Alternando a implementação do Repository
 34.10. Abstraindo a fábrica de repositórios
 34.11. Criando um arquivo de configuração (properties)
+
+### 35. Reflection API, anotações e classes seladas
+
+35.1. Conhecendo o projeto de gerador de CSV
+35.2. Lendo propriedades dinamicamente com Reflection API
+35.3. Invocando a leitura de valores de propriedades
+35.4. Introdução às anotações do Java
+35.5. Criando uma anotação customizada
+35.6. Processando anotações com Reflection API
+35.7. Adicionando e processando atributos na anotação
+35.8. Classes seladas
+35.9. Conclusão e próximos passos

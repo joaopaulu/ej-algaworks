@@ -635,3 +635,17 @@
 33.10. Executando comandos que alteram dados (DML)
 33.11. Obtendo código de autoincremento gerado
 33.12. Gerenciando transações com o banco de dados
+
+### 34. Padrão de projeto: Repository
+
+34.1. Introdução ao design de software
+34.2. Criando entidade e camada de serviço
+34.3. Conhecendo o pattern Repository
+34.4. Implementando uma classe Repository
+34.5. Implementando uma consulta no repositório
+34.6. Desacoplando a conexão com o banco de dados
+34.7. Implementando uma fábrica de Repository
+34.8. Desacoplando a implementação de Repository
+34.9. Alternando a implementação do Repository
+34.10. Abstraindo a fábrica de repositórios
+34.11. Criando um arquivo de configuração (properties)
